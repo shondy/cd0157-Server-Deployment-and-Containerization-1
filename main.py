@@ -101,6 +101,8 @@ def decode_jwt():
     response = {'email': data['email'],
                 'exp': data['exp'],
                 'nbf': data['nbf'] }
+    # https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/
+    # https://stackoverflow.com/questions/7907596/json-dumps-vs-flask-jsonify
     return jsonify(**response)
 
 
